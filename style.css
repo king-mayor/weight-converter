@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2F2F23;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #D7D7D7;
+    width: 450px;
+    align-items:  center;
+    margin: 70px auto;
+    padding: 30px;
+    animation: roll-in 0.7s ease;
+}
+@keyframes roll-in {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.form-header {
+    font-size: 1.1em;
+    padding-top: 20px;
+    color: #F35321;
+}
+.container-header {
+    font-size: 1.7em;
+    background-color: #2F2F23;
+    color:#ffff;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.container input {
+    width: 100%;
+    font-size: 1.4em;
+    outline: none;
+    padding-left: 10px;
+}
+.pounds-header, .kilograms-header, .grams-header, .ounces-header {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 1.3em;
+}
+@media all and (max-width: 600px){
+    .container{
+        width: 350px;
+    }
+}
